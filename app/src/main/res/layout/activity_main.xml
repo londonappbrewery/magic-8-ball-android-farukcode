@@ -1,13 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    tools:context=".MainActivity">
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/activity_main"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="16dp"
+	android:paddingRight="16dp"
+	android:paddingTop="16dp"
+	android:paddingBottom="16dp"
+	tools:context=".MainActivity"
+	android:background="#26ADE0">
+
+	<LinearLayout
+		android:layout_height="100dp"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:id="@+id/activitymainLinearLayout1">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="It is probably true ..."
+			android:background="#CA0000"
+			android:padding="5dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="250dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_below="@id/activitymainLinearLayout1"
+		android:gravity="center"
+		android:id="@+id/activitymainLinearLayout2">
+
+		<ImageView
+			android:src="@drawable/ball1"
+			android:layout_width="250dp"
+			android:layout_height="250dp"
+			android:id="@+id/ballDisplay"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="150dp"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_below="@id/activitymainLinearLayout2"
+		android:gravity="center">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Ask"
+			android:width="300dp"
+			android:background="#3F51B5"
+			android:id="@+id/askButton"/>
+
+	</LinearLayout>
+
 </RelativeLayout>
+
